@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="58.0dip"
+        android:layout_toRightOf="@id/icon"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:includeFontPadding="false"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="Title"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/service_description"
+        android:layout_width="fill_parent"
+        android:layout_height="25.0dip"
+        android:layout_below="@id/service_name"
+        android:layout_marginLeft="64.0dip"
+        android:layout_marginRight="30.0dip"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip"
+        android:singleLine="true"
+        android:text="Subtitle"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/service_last_invoke_time"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dip"
+        android:layout_above="@id/service_description"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginRight="10dip"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:text="昨天"
+        android:textSize="10.0sp" />
+
+    <TextView
+        android:id="@+id/invoke_count"
+        android:layout_width="16dip"
+        android:layout_height="16.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_below="@id/service_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:shadowColor="#19000000"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"
+        android:text="10"
+        android:textColor="#ffffffff"
+        android:textSize="10.0dip" />
+
+</RelativeLayout>

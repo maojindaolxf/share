@@ -17,26 +17,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5c9bec-bb3d-41e5-9e10-227ca650adb9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/ServiceDetailSettingsActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/adapter/MyServiceListViewAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/model/Service.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/util/Utils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_service_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail_setting.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/my_service_item.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/my_content.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/my_service_content.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/divider.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/MyFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/MyFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share.iml" afterPath="$PROJECT_DIR$/share.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail_setting.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail_setting.xml" />
     </list>
     <ignored path="share.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,15 +74,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_service_detail_setting.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_service_detail_setting.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail_setting.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.28125">
-              <caret line="185" column="39" selection-start-line="185" selection-start-column="39" selection-end-line="185" selection-end-column="39" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6294919">
+              <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="175" selection-end-column="8" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
@@ -114,11 +97,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="btn_service_detail.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="btn_service_detail.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/btn_service_detail.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.027479092">
+            <state vertical-scroll-proportion="-0.71875">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="divider.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/divider.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -1763,8 +1756,9 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/ServiceDetailSettingsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/MyFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail_setting.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/btn_service_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/divider.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail_setting.xml" />
       </list>
     </option>
   </component>
@@ -2279,13 +2273,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/NsdChatActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/NsdHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2700,17 +2687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail_setting.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.28125">
-          <caret line="185" column="39" selection-start-line="185" selection-start-column="39" selection-end-line="185" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zju/lxf/share/MyFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2724,10 +2700,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/btn_service_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.027479092">
+        <state vertical-scroll-proportion="-0.71875">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/divider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_service_detail_setting.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6294919">
+          <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="175" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

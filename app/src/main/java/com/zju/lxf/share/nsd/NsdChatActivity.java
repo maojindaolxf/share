@@ -1,5 +1,5 @@
 
-package com.zju.lxf.share;
+package com.zju.lxf.share.nsd;
 
 import android.app.Activity;
 import android.net.nsd.NsdServiceInfo;
@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.zju.lxf.share.R;
 
 public class NsdChatActivity extends Activity {
 

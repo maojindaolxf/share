@@ -36,8 +36,9 @@ public class MyFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getActivity(), ServiceDetailSettingsActivity.class);
                 Object o = adapterView.getItemAtPosition(i);
-//                if(o instanceof  Service)
-//                    intent.putExtra(ServiceDetailSettingsActivity.TAG, (Service)o);
+                if(o instanceof  Service){
+                    intent.putExtra(ServiceDetailSettingsActivity.TAG, (Service)o);
+                }
                 startActivity(intent);
             }
         };

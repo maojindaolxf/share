@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.zju.lxf.share;
+package com.zju.lxf.share.nsd;
 
 import android.os.Bundle;
 import android.os.Handler;

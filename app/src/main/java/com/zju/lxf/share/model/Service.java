@@ -1,17 +1,30 @@
 package com.zju.lxf.share.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.zju.lxf.share.util.Utils;
 
 import java.util.Date;
 
-public class Service {
+public class Service implements Parcelable {
+    private byte status;
+    private long invokeCount;
+
     private String id;
     private String name;
     private String description;
     private String lastInvokedTime;
-    private long   invokeCount;
     private String iconPath;
-    private boolean status;
+
+    public Service(){
+        this.name = null;
+        this.description = null;
+        this.iconPath = null;
+
+        this.invokeCount = 0;
+        this.lastInvokedTime = Utils.invokeTimeFormat.format(new Date());
+    }
 
     public Service(String name, String description, String iconPath){
         this.name = name;
@@ -70,11 +83,51 @@ public class Service {
         this.iconPath = iconPath;
     }
 
-    public boolean isStatus() {
+    public byte getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(byte status) {
         this.status = status;
+    }
+
+    public static final Parcelable.Creator<Service> CREATOR = new Creator<Service>() {
+
+        @Override
+        public Service[] newArray(int size) {
+            return new Service[size];
+        }
+
+        @Override
+        public Service createFromParcel(Parcel source) {
+            Service s = new Service();
+
+            s.setStatus(source.readByte());
+            s.setInvokeCount(source.readLong());
+            s.setId(source.readString());
+            s.setName(source.readString());
+            s.setDescription(source.readString());
+            s.setLastInvokedTime(source.readString());
+            s.setIconPath(source.readString());
+
+            return s;
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeByte(status);
+        parcel.writeLong(invokeCount);
+
+        parcel.writeString(id);
+        parcel.writeString(name);
+        parcel.writeString(description);
+        parcel.writeString(lastInvokedTime);
+        parcel.writeString(iconPath);
     }
 }

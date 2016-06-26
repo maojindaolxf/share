@@ -21,7 +21,7 @@ public class NsdHelper {
 
     public static NsdHelper getInstance(Context context) {
         if (nsdHelper == null) {
-            synchronized (nsdHelper) {
+            synchronized (NsdHelper.class) {
                 if (nsdHelper == null) {
                     nsdHelper = new NsdHelper(context);
                 }

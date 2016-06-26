@@ -1,11 +1,11 @@
 package com.zju.lxf.share;
 
-
 import android.content.Intent;
 import android.net.nsd.NsdManager;
 import android.net.nsd.NsdServiceInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -53,8 +53,8 @@ public class ServiceDetailSettingsActivity extends AppCompatActivity {
             registrationListener = new NsdManager.RegistrationListener() {
 
                 @Override
-                public void onServiceRegistered(NsdServiceInfo NsdServiceInfo) {
-
+                public void onServiceRegistered(NsdServiceInfo nsdServiceInfo) {
+                    Log.d(TAG, nsdServiceInfo.getServiceName());
                 }
 
                 @Override

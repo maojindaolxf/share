@@ -34,6 +34,7 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
 
     private NsdHelper nsdHelper;
     private NsdManager.DiscoveryListener mDiscoveryListener;
+    private NsdManager.ResolveListener mResolveListener;
     @SuppressLint("handlerLeak")
     private Handler mHandler = new Handler()
     {
@@ -62,8 +63,9 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
             @Override
             public void onServiceFound(NsdServiceInfo serviceInfo) {
                 String serviceName = serviceInfo.getServiceName();
-                if(!mServices.contains(serviceName))
-                    mServices.add(serviceInfo.getServiceName());
+                if(!mServices.contains(serviceName)){
+                    nsdHelper.resolveService(serviceInfo,mResolveListener);
+                }
             }
 
             @Override
@@ -89,6 +91,18 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
             @Override
             public void onServiceLost(NsdServiceInfo serviceInfo) {
                 Log.e(TAG, "service lost " + serviceInfo);
+            }
+        };
+
+        mResolveListener = new NsdManager.ResolveListener() {
+            @Override
+            public void onResolveFailed(NsdServiceInfo serviceInfo, int errorCode) {
+                Log.e(TAG, "Resolve failed" + errorCode);
+            }
+            @Override
+            public void onServiceResolved(NsdServiceInfo serviceInfo) {
+                Log.e(TAG, "Resolve Succeeded. " + serviceInfo);
+                mServices.add(serviceInfo.toString());
             }
         };
     }

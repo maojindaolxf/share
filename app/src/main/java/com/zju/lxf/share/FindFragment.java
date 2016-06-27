@@ -34,7 +34,6 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
 
     private NsdHelper nsdHelper;
     private NsdManager.DiscoveryListener mDiscoveryListener;
-
     @SuppressLint("handlerLeak")
     private Handler mHandler = new Handler()
     {
@@ -62,6 +61,7 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         mDiscoveryListener = new NsdManager.DiscoveryListener() {
             @Override
             public void onServiceFound(NsdServiceInfo serviceInfo) {
+
                 mServices.add(serviceInfo.getServiceName());
             }
 
@@ -110,8 +110,7 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     @Override
     public void onRefresh() {
         mHandler.obtainMessage(REFRESH_START).sendToTarget();
-        mHandler.sendEmptyMessageDelayed(REFRESH_COMPLETE, 2000);
+        mHandler.sendEmptyMessageDelayed(REFRESH_COMPLETE, 1000);
     }
-
 
 }

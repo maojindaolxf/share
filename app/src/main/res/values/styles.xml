@@ -15,4 +15,26 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="service_detail_text_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25.0dp</item>
+        <item name="android:layout_marginLeft">10.0dp</item>
+        <item name="android:layout_marginRight">10.0dp</item>
+        <item name="android:layout_marginTop">10.0dp</item>
+        <item name="android:layout_marginBottom">10.0dp</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:padding">0.0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
 </resources>

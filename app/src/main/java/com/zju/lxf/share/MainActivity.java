@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.zju.lxf.share.nsd.NsdHelper;
+import com.zju.lxf.share.util.Utils;
+
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener,
         ViewPager.OnPageChangeListener{
 
@@ -87,5 +90,10 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         }
     }
 
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        Utils.tearDownService(NsdHelper.getInstance(this));
+    }
 
 }

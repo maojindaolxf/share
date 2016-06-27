@@ -75,7 +75,7 @@ public class ServiceDetailSettingsActivity extends AppCompatActivity {
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nsdHelper.registerService(serviceName, 8000, "_http._tcp.", registrationListener);
+                nsdHelper.registerService(serviceName, 9999, "_http._tcp.", registrationListener);
             }
         });
 
@@ -86,8 +86,5 @@ public class ServiceDetailSettingsActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
 
 }

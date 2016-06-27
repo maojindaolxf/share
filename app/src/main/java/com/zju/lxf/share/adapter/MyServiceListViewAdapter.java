@@ -44,13 +44,10 @@ public class MyServiceListViewAdapter extends BaseAdapter{
             TextView name = (TextView)view.findViewById(R.id.service_name);
             TextView description = (TextView)view.findViewById(R.id.service_description);
             TextView lastInvokedTime = (TextView)view.findViewById(R.id.service_last_invoke_time);
-            TextView invokeCount = (TextView)view.findViewById(R.id.invoke_count);
 
             name.setText(service.getName());
             description.setText(service.getDescription());
             lastInvokedTime.setText(service.getLastInvokedTime());
-            invokeCount.setText(String.valueOf(service.getInvokeCount()));
-
         }
         return view;
     }

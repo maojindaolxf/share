@@ -59,5 +59,6 @@ public class Utils {
         for(String key : serviceToRegistrationListener.keySet()){
             nsdHelper.tearDown(serviceToRegistrationListener.get(key));
         }
+        serviceToRegistrationListener.clear();
     }
 }

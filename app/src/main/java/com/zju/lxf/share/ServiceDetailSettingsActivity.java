@@ -75,7 +75,8 @@ public class ServiceDetailSettingsActivity extends AppCompatActivity {
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nsdHelper.registerService(serviceName, 9999, "_http._tcp.", registrationListener);
+                int port = Utils.getAvailablePort();
+                nsdHelper.registerService(serviceName, port, "_http._tcp.", registrationListener);
             }
         });
 

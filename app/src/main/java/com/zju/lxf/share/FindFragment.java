@@ -61,8 +61,9 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         mDiscoveryListener = new NsdManager.DiscoveryListener() {
             @Override
             public void onServiceFound(NsdServiceInfo serviceInfo) {
-
-                mServices.add(serviceInfo.getServiceName());
+                String serviceName = serviceInfo.getServiceName();
+                if(!mServices.contains(serviceName))
+                    mServices.add(serviceInfo.getServiceName());
             }
 
             @Override

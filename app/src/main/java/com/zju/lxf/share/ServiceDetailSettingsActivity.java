@@ -11,8 +11,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.zju.lxf.share.model.Service;
+import com.zju.lxf.share.netty.EchoInboundServerHandler;
 import com.zju.lxf.share.nsd.NsdHelper;
+import com.zju.lxf.share.netty.NettyServer;
 import com.zju.lxf.share.util.Utils;
+
+import java.util.Arrays;
 
 public class ServiceDetailSettingsActivity extends AppCompatActivity {
     public  static final String TAG = "ServiceData";
@@ -77,6 +81,7 @@ public class ServiceDetailSettingsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int port = Utils.getAvailablePort();
                 nsdHelper.registerService(serviceName, port, "_http._tcp.", registrationListener);
+                new NettyServer(port, Arrays.asList(new EchoInboundServerHandler())).start();
             }
         });
 

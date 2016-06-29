@@ -64,6 +64,7 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
             public void onServiceFound(NsdServiceInfo serviceInfo) {
                 String serviceName = serviceInfo.getServiceName();
                 if(!mServices.contains(serviceName)){
+                    mServices.add(serviceName);
                     nsdHelper.resolveService(serviceInfo,mResolveListener);
                 }
             }
@@ -102,7 +103,6 @@ public class FindFragment extends Fragment implements SwipeRefreshLayout.OnRefre
             @Override
             public void onServiceResolved(NsdServiceInfo serviceInfo) {
                 Log.e(TAG, "Resolve Succeeded. " + serviceInfo);
-                mServices.add(serviceInfo.toString());
             }
         };
     }
